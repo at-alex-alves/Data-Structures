@@ -14,12 +14,7 @@ var (
 	selectionSortTime int
 )
 
-/*
-	Calculates the processing time for each algorithm based on the generated slice.
-
-	Params:
-		sliceSize (int): The size of the slice that will be generated for each algorithm execution.
-*/
+// run calculates the processing time for each algorithm based on the generated slice.
 func run(sliceSize int) {
 	rand.Seed(time.Now().Unix())
 	slice := rand.Perm(sliceSize)
@@ -55,14 +50,8 @@ func run(sliceSize int) {
 	selectionSortTime += int(end)
 }
 
-/*
-	Evaluates the performance by getting the mean value of the execution of all algorithms with the passed slice size.
-
-	Args:
-		arraySizeFrom (int): The minimum size of the slice that will be passed to the algorithms.
-		arraySizeTo (int): The maximum size of the slice that will be passed to the algorithms.
-*/
-func EvaluatePerformace(arraySizeFrom, arraySizeTo int) {
+// EvaluatePerformance evaluates the performance by getting the mean value of the execution of all algorithms with the passed slice size
+func EvaluatePerformance(arraySizeFrom, arraySizeTo int) {
 	bubbleSortTime = 0
 	insertionSortTime = 0
 	mergeSortTime = 0

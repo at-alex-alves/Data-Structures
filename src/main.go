@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	sorting.EvaluatePerformace(5, 200)
+	sorting.EvaluatePerformance(5, 200)
 }

@@ -1,14 +1,6 @@
 package sorting
 
-/*
-	Sorts a slice of numbers in ascending order.
-
-	Args:
-		passedSlice ([]int): The slice to be sorted.
-
-	Returns:
-		[]int: Sorted slice.
-*/
+// selectionSort sorts a slice of numbers in ascending order.
 func selectionSort(passedSlice []int) []int {
 	i := 0
 
